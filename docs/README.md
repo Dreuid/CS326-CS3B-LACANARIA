@@ -1,1 +1,2 @@
-# Student GWA Tracker
+
+# GWA Calculator App
