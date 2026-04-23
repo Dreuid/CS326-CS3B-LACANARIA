@@ -1,5 +1,1 @@
-Project Title:
-Problem:
-scope:
-members:
-chosen tech stack:
+# Student GWA Tracker
