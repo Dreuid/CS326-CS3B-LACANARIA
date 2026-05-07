@@ -15,3 +15,4 @@
 | **R06** | **UI Incompatibility:** React Native frontend breaks on different screen sizes. | 3 | 3 | **9** | Use flexbox for responsive design and test on multiple device emulators early. | Kyle |
 | **R07** | **Environment Issues:** Python/React versions differ across members' machines causing "works on my machine" errors. | 4 | 2 | **8** | Standardize versions in a `requirements.txt` and `package.json` file. | James |
 | **R08** | **Failed Authentication:** Security flaws in the login system expose student data. | 1 | 5 | **5** | Use established, tested authentication libraries instead of writing custom auth logic. | Lorenz |
+| **R09** | **Data Breach/Injection:** Malicious actors inputting negative values to crash the math logic or guessing hardcoded keys. | 2 | 5 | **10** | Implemented environment variables for secrets and strict integer/float bounds checking on all inputs. | Lorenz |
