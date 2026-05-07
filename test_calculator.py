@@ -26,3 +26,15 @@ def test_calculate_gwa_rounding():
     # Math: (1.25*3 + 1.75*4) / 7 = 10.75 / 7 = 1.5357... rounds to 1.54
     courses = [{'grade': 1.25, 'units': 3}, {'grade': 1.75, 'units': 4}]
     assert calculate_gwa(courses) == 1.54
+
+# Test 6: Negative units raise ValueError
+def test_calculate_gwa_negative_units():
+    courses = [{'grade': 1.5, 'units': -3}]
+    with pytest.raises(ValueError):
+        calculate_gwa(courses)
+
+# Test 7: Negative grade raises ValueError
+def test_calculate_gwa_negative_grade():
+    courses = [{'grade': -1.0, 'units': 3}]
+    with pytest.raises(ValueError):
+        calculate_gwa(courses)
